@@ -1,0 +1,7 @@
+server:
+  port: 8288
+reverse_proxy:
+  remote_url: https://apiuat.kss.com.vn/uat/v1/kos/p
+sky_walking:
+  host: oap-skywalking:11800
+  service_name: example
