@@ -1,4 +1,0 @@
-p, cs, /v1/test/e/banks/:custoCD/external-transfer, (GET)|(POST)
-p2, cs, /v1/test/e/banks/:custoCD/external-transfer, (GET)|(POST)
-p, cs, /v1/test/e/banks/:custoCD/external-transfer-validate, (GET)|(POST)
-p2, cs, /v1/test/e/banks/:custoCD/external-transfer-validate, (GET)|(POST)
