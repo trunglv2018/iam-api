@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: sudo docker build . --file Dockerfile --tag iam-api:$(date +%s)
+      run: |
+        echo "building docker"
+        sudo docker build . --file Dockerfile --tag iam-api:latest
+        sudo docker run -d --name -p:8888:8000 iam-api:latest 
+        echo "finish building"
