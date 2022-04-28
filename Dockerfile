@@ -11,7 +11,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -o iam-api .
 FROM alpine:3.11.3
 COPY --from=builder /build/iam-api .
 COPY --from=builder /build/config.yaml .
-COPY --from=builder /build/acl-model .
+RUN mkdir /acl-model
+COPY --from=builder /build/acl-model ./acl-model
 
 # executable
 EXPOSE 8000
